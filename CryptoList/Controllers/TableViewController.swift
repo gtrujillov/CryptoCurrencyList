@@ -18,6 +18,8 @@ class TableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         cryptoManager.fetchCrypto { [self] cryptoData in
             self.cryptoCurrencyList = cryptoData
             DispatchQueue.main.async {
@@ -25,7 +27,7 @@ class TableViewController: UITableViewController {
             }
         }
         
-        tableView.register(CustomCell.self, forCellReuseIdentifier: "CryptoCell")
+        tableView.register(CustomCell.self, forCellReuseIdentifier: "CustomCell")
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -47,7 +49,7 @@ class TableViewController: UITableViewController {
             DispatchQueue.global().async {
                 if let imageData = try? Data(contentsOf: imageURL) {
                     DispatchQueue.main.async {
-                        cell.cryptoImage.image = UIImage(data: imageData)
+                        cell.cryptoImage?.image = UIImage(data: imageData)
                     }
                 }
             }
@@ -56,7 +58,11 @@ class TableViewController: UITableViewController {
         return cell
         
     }
-    
+
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Crypto Currecy List"
     }

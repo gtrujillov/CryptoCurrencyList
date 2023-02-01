@@ -10,7 +10,7 @@ import UIKit
 
 class CustomCell: UITableViewCell {
     
-    @IBOutlet weak var cryptoNameLabel: UILabel!
-    @IBOutlet weak var cryptoPriceLabel: UILabel!
-    @IBOutlet weak var cryptoImage: UIImageView!
+    @IBOutlet weak var cryptoNameLabel: UILabel?
+    @IBOutlet weak var cryptoPriceLabel: UILabel?
+    @IBOutlet weak var cryptoImage: UIImageView?
 }
