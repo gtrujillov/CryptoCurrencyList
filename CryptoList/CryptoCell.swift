@@ -18,12 +18,9 @@ class CryptoCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Personalización de los labels
-        cryptoNameLabel.textColor = UIColor.blue
-        cryptoPriceLabel.textColor = UIColor.blue
 
     }
-    
+
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         

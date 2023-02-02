@@ -11,9 +11,7 @@ class TableViewController: UITableViewController {
     
     //Lista de CryptoMonedas
     var cryptoCurrencyList =  [CryptoModel]()
-    
     let cryptoManager = CryptoManager()
-    
     let cryptoCell = CryptoCell()
     
     override func viewDidLoad() {
