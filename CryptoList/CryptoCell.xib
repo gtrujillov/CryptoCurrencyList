@@ -17,21 +17,24 @@
                 <rect key="frame" x="0.0" y="0.0" width="384" height="102"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="56H-pI-IhD">
-                        <rect key="frame" x="277" y="16.666666666666664" width="87" height="69.333333333333343"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="56H-pI-IhD">
+                        <rect key="frame" x="304" y="16" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="44E-Zw-Ead"/>
+                            <constraint firstAttribute="width" constant="70" id="wma-Pa-fb0"/>
+                        </constraints>
                     </imageView>
-                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="uf1-UX-Aix">
-                        <rect key="frame" x="27.000000000000004" y="17" width="41.333333333333336" height="67.666666666666671"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="uf1-UX-Aix">
+                        <rect key="frame" x="10" y="12.333333333333336" width="59" height="77.333333333333314"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddA-Q5-U6d">
-                                <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="20.333333333333332"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="0.0" y="0.0" width="59" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pc-fh-fAh">
-                                <rect key="frame" x="0.0" y="47.333333333333336" width="41.333333333333336" height="20.333333333333336"/>
+                                <rect key="frame" x="0.0" y="56.999999999999993" width="59" height="20.333333333333336"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -39,6 +42,12 @@
                         </subviews>
                     </stackView>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="56H-pI-IhD" secondAttribute="trailing" constant="10" id="Fzt-mX-WhT"/>
+                    <constraint firstItem="56H-pI-IhD" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="WnC-Gh-3fg"/>
+                    <constraint firstItem="uf1-UX-Aix" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="YFg-sa-Ln2"/>
+                    <constraint firstItem="uf1-UX-Aix" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="w0O-Ke-hyO"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
@@ -46,7 +55,7 @@
                 <outlet property="cryptoNameLabel" destination="ddA-Q5-U6d" id="27P-bt-khm"/>
                 <outlet property="cryptoPriceLabel" destination="6pc-fh-fAh" id="Ow3-iC-PWY"/>
             </connections>
-            <point key="canvasLocation" x="195" y="-18"/>
+            <point key="canvasLocation" x="11" y="-40"/>
         </tableViewCell>
     </objects>
 </document>
