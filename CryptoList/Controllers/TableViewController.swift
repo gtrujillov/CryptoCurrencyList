@@ -7,8 +7,6 @@
 
 import UIKit
 
-
-
 class TableViewController: UITableViewController {
     
     //Lista de CryptoMonedas
@@ -16,9 +14,10 @@ class TableViewController: UITableViewController {
     
     let cryptoManager = CryptoManager()
     
+    let cryptoCell = CryptoCell()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         cryptoManager.fetchCrypto { [self] cryptoData in
             self.cryptoCurrencyList = cryptoData
@@ -27,7 +26,7 @@ class TableViewController: UITableViewController {
             }
         }
         
-        tableView.register(CustomCell.self, forCellReuseIdentifier: "CustomCell")
+        tableView.register(UINib(nibName: cryptoCell.identifier, bundle: nil), forCellReuseIdentifier: cryptoCell.identifier)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -35,21 +34,18 @@ class TableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CryptoCell", for: indexPath) as! CryptoCell
         
         let cryptoCurrency = cryptoCurrencyList[indexPath.row]
         
-        if let label = cell.cryptoNameLabel {
-            label.text = cryptoCurrency.name
-        }
-        if let label = cell.cryptoPriceLabel {
-            label.text = String(cryptoCurrency.price)
-        }
+        cell.cryptoNameLabel?.text = cryptoCurrency.name
+        cell.cryptoPriceLabel?.text = String(cryptoCurrency.price)
+        
         if let imageURL = URL(string: cryptoCurrency.image) {
             DispatchQueue.global().async {
                 if let imageData = try? Data(contentsOf: imageURL) {
                     DispatchQueue.main.async {
-                        cell.cryptoImage?.image = UIImage(data: imageData)
+                        cell.imageView?.image = UIImage(data: imageData)
                     }
                 }
             }

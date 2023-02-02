@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F5C3388298C07B1000EF600 /* CryptoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5C3386298C07B1000EF600 /* CryptoCell.swift */; };
+		8F5C3389298C07B1000EF600 /* CryptoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F5C3387298C07B1000EF600 /* CryptoCell.xib */; };
 		8F918D3529892D2200658254 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F918D3429892D2200658254 /* AppDelegate.swift */; };
 		8F918D3729892D2200658254 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F918D3629892D2200658254 /* SceneDelegate.swift */; };
 		8F918D3C29892D2200658254 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F918D3A29892D2200658254 /* Main.storyboard */; };
@@ -16,12 +18,11 @@
 		8F918D51298937B800658254 /* CryptoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F918D50298937B800658254 /* CryptoData.swift */; };
 		8F918D5429893DEC00658254 /* CryptoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F918D5329893DEC00658254 /* CryptoManager.swift */; };
 		8F918D5629893F4E00658254 /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F918D5529893F4E00658254 /* CryptoModel.swift */; };
-		8F918D592989766100658254 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F918D572989766000658254 /* DetailViewController.swift */; };
-		8F918D5A2989766100658254 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F918D582989766000658254 /* DetailViewController.xib */; };
-		8FAB0B6829898FED00B5B18D /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAB0B6729898FED00B5B18D /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F5C3386298C07B1000EF600 /* CryptoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCell.swift; sourceTree = "<group>"; };
+		8F5C3387298C07B1000EF600 /* CryptoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CryptoCell.xib; sourceTree = "<group>"; };
 		8F918D3129892D2200658254 /* CryptoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F918D3429892D2200658254 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F918D3629892D2200658254 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,9 +34,6 @@
 		8F918D50298937B800658254 /* CryptoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoData.swift; sourceTree = "<group>"; };
 		8F918D5329893DEC00658254 /* CryptoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoManager.swift; sourceTree = "<group>"; };
 		8F918D5529893F4E00658254 /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
-		8F918D572989766000658254 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		8F918D582989766000658254 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
-		8FAB0B6729898FED00B5B18D /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +47,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F5C3385298C0781000EF600 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		8F918D2829892D2200658254 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +81,9 @@
 				8F918D3D29892D2400658254 /* Assets.xcassets */,
 				8F918D3F29892D2400658254 /* LaunchScreen.storyboard */,
 				8F918D4229892D2400658254 /* Info.plist */,
+				8F5C3385298C0781000EF600 /* Supporting Files */,
+				8F5C3386298C07B1000EF600 /* CryptoCell.swift */,
+				8F5C3387298C07B1000EF600 /* CryptoCell.xib */,
 			);
 			path = CryptoList;
 			sourceTree = "<group>";
@@ -83,7 +91,6 @@
 		8F918D4829892DD800658254 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8F918D582989766000658254 /* DetailViewController.xib */,
 				8F918D3A29892D2200658254 /* Main.storyboard */,
 			);
 			path = View;
@@ -93,8 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				8F918D4E29892FFA00658254 /* TableViewController.swift */,
-				8F918D572989766000658254 /* DetailViewController.swift */,
-				8FAB0B6729898FED00B5B18D /* CustomCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -167,10 +172,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F5C3389298C07B1000EF600 /* CryptoCell.xib in Resources */,
 				8F918D4129892D2400658254 /* LaunchScreen.storyboard in Resources */,
 				8F918D3E29892D2400658254 /* Assets.xcassets in Resources */,
 				8F918D3C29892D2200658254 /* Main.storyboard in Resources */,
-				8F918D5A2989766100658254 /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,10 +190,9 @@
 				8F918D3529892D2200658254 /* AppDelegate.swift in Sources */,
 				8F918D51298937B800658254 /* CryptoData.swift in Sources */,
 				8F918D5429893DEC00658254 /* CryptoManager.swift in Sources */,
+				8F5C3388298C07B1000EF600 /* CryptoCell.swift in Sources */,
 				8F918D3729892D2200658254 /* SceneDelegate.swift in Sources */,
 				8F918D4F29892FFA00658254 /* TableViewController.swift in Sources */,
-				8FAB0B6829898FED00B5B18D /* CustomCell.swift in Sources */,
-				8F918D592989766100658254 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
