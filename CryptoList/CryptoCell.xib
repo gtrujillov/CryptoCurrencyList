@@ -25,34 +25,27 @@
                         </constraints>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="uf1-UX-Aix">
-                        <rect key="frame" x="10" y="15.5" width="48" height="71.5"/>
+                        <rect key="frame" x="10" y="13" width="48" height="76.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddA-Q5-U6d">
                                 <rect key="frame" x="0.0" y="0.0" width="48" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.12193575769999999" green="0.41128337300000001" blue="0.5414004026" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pc-fh-fAh">
-                                <rect key="frame" x="0.0" y="51" width="48" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="0.0" y="51" width="48" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="21"/>
+                                <color key="textColor" red="0.12193575769999999" green="0.41128337300000001" blue="0.5414004026" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                     </stackView>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eurosign" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="J6k-Mp-Ngd">
-                        <rect key="frame" x="66" y="67.5" width="18.5" height="17.5"/>
-                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="56H-pI-IhD" secondAttribute="trailing" constant="10" id="Fzt-mX-WhT"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="J6k-Mp-Ngd" secondAttribute="bottom" constant="4.5" id="T8C-qb-cyZ"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="J6k-Mp-Ngd" secondAttribute="bottom" constant="4.5" id="Vdc-B8-g6Q"/>
                     <constraint firstItem="56H-pI-IhD" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="WnC-Gh-3fg"/>
                     <constraint firstItem="uf1-UX-Aix" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="YFg-sa-Ln2"/>
-                    <constraint firstItem="J6k-Mp-Ngd" firstAttribute="centerY" secondItem="6pc-fh-fAh" secondAttribute="centerY" id="ljI-aM-HCk"/>
-                    <constraint firstItem="56H-pI-IhD" firstAttribute="leading" secondItem="J6k-Mp-Ngd" secondAttribute="trailing" constant="219.5" id="sgp-jF-Uou"/>
                     <constraint firstItem="uf1-UX-Aix" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="w0O-Ke-hyO"/>
                 </constraints>
             </tableViewCellContentView>
@@ -65,7 +58,4 @@
             <point key="canvasLocation" x="0.0" y="-28.125"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="eurosign" catalog="system" width="128" height="121"/>
-    </resources>
 </document>

@@ -18,6 +18,8 @@ class CryptoCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        cryptoImage.layer.cornerRadius = cryptoImage.frame.size.width / 2
+        cryptoImage.clipsToBounds = true
 
     }
 

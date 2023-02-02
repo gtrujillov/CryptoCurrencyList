@@ -37,7 +37,7 @@ class TableViewController: UITableViewController {
         let cryptoCurrency = cryptoCurrencyList[indexPath.row]
         
         cell.cryptoNameLabel?.text = cryptoCurrency.name
-        cell.cryptoPriceLabel?.text = String(cryptoCurrency.price)
+        cell.cryptoPriceLabel?.text = "\(String(cryptoCurrency.price)) €"
         
         if let imageURL = URL(string: cryptoCurrency.image) {
             DispatchQueue.global().async {
