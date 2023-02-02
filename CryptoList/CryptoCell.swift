@@ -20,8 +20,9 @@ class CryptoCell: UITableViewCell {
         super.awakeFromNib()
         
         // Personalización de la apariencia de la celda
-        self.backgroundColor = UIColor.lightGray
+        self.backgroundColor = UIColor.gray
         self.layer.cornerRadius = 10
+        self.layer.borderWidth = 1
         self.clipsToBounds = true
         
         // Personalización de los labels

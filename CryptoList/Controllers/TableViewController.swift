@@ -45,7 +45,7 @@ class TableViewController: UITableViewController {
             DispatchQueue.global().async {
                 if let imageData = try? Data(contentsOf: imageURL) {
                     DispatchQueue.main.async {
-                        cell.imageView?.image = UIImage(data: imageData)
+                        cell.cryptoImage?.image = UIImage(data: imageData)
                     }
                 }
             }
