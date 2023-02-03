@@ -81,6 +81,19 @@ class TableViewController: UITableViewController, UISearchResultsUpdating {
         return 100
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let detailVC = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController {
+            //TO-DO Añadir mas detalles
+            detailVC.name = cryptoCurrencyList[indexPath.row].name
+            detailVC.lPrice = cryptoCurrencyList[indexPath.row].low24h
+            detailVC.hPrice = cryptoCurrencyList[indexPath.row].high24h
+            detailVC.volumePrice = cryptoCurrencyList[indexPath.row].totalVolume
+            detailVC.img = UIImage(named: cryptoCurrencyList[indexPath.row].image)!
+            
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }
+    }
+    
     //MARK: - SearchBar methods
     
     func updateSearchResults(for searchController: UISearchController) {
