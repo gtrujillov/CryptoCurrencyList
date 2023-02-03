@@ -14,7 +14,7 @@ class CryptoCell: UITableViewCell {
     @IBOutlet weak var cryptoPriceLabel: UILabel!
     @IBOutlet weak var cryptoImage: UIImageView!
     
-    let identifier = "CryptoCell"
+    static let identifier = "CryptoCell"
     
     override func awakeFromNib() {
         super.awakeFromNib()

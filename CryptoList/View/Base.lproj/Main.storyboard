@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FWe-Ya-wow">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qSd-jk-TXq">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -8,7 +8,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="7Lg-Ca-Uig">
+            <objects>
+                <navigationController id="qSd-jk-TXq" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9cu-Pg-j5X">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FWe-Ya-wow" kind="relationship" relationship="rootViewController" id="ENA-fa-QbM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j8r-fT-nug" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1525" y="-11"/>
+        </scene>
+        <!--Crypto currency list-->
         <scene sceneID="YYg-Qh-xrb">
             <objects>
                 <tableViewController id="FWe-Ya-wow" customClass="TableViewController" customModule="CryptoList" customModuleProvider="target" sceneMemberID="viewController">
@@ -21,10 +37,11 @@
                             <outlet property="delegate" destination="FWe-Ya-wow" id="4wN-Qu-nyu"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Crypto currency list" id="uKz-dx-Tz7"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tkp-yq-6Zx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-14.492753623188406" y="-57.589285714285708"/>
+            <point key="canvasLocation" x="-616" y="-11"/>
         </scene>
     </scenes>
     <resources>
