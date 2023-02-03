@@ -56,9 +56,8 @@ class TableViewController: UITableViewController, UISearchResultsUpdating {
         
         let priceChanged = cryptoCurrency.priceChanged
         let symbol = priceChanged < 0 ? symbolDown : symbolUp
+        cell.priceSymbol?.image = symbol
         
-        
-
         cell.cryptoPriceLabel?.text = "\(cryptoCurrency.price) €"
 
         
