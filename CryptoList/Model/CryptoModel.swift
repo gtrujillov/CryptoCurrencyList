@@ -21,6 +21,6 @@ struct CryptoModel {
         self.name = cryptoDTO.name
         self.price = cryptoDTO.current_price
         self.image = cryptoDTO.image
-        self.priceChanged = cryptoDTO.price_changed
+        self.priceChanged = cryptoDTO.price_change_24h
     }
 }

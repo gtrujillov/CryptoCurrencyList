@@ -43,6 +43,7 @@
                     </stackView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hmV-Hf-pLP">
                         <rect key="frame" x="81" y="20" width="10" height="10"/>
+                        <color key="tintColor" red="0.12193575769999999" green="0.41128337300000001" blue="0.5414004026" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="10" id="lTV-05-fr5"/>
                             <constraint firstAttribute="height" constant="10" id="yju-jE-T4d"/>
@@ -64,8 +65,9 @@
                 <outlet property="cryptoImage" destination="56H-pI-IhD" id="eEX-eR-maw"/>
                 <outlet property="cryptoNameLabel" destination="ddA-Q5-U6d" id="27P-bt-khm"/>
                 <outlet property="cryptoPriceLabel" destination="6pc-fh-fAh" id="Ow3-iC-PWY"/>
+                <outlet property="priceSymbol" destination="hmV-Hf-pLP" id="p1Q-5s-xJQ"/>
             </connections>
-            <point key="canvasLocation" x="200.00000000000003" y="-15.401785714285714"/>
+            <point key="canvasLocation" x="123" y="-52"/>
         </tableViewCell>
     </objects>
 </document>
