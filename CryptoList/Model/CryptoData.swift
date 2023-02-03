@@ -13,6 +13,7 @@ struct  CryptoDTO: Decodable{
     let name: String
     let current_price: Double
     let image: String
+    let price_changed: Double
     
     func toCryptoModel() -> CryptoModel{
         return CryptoModel(cryptoDTO: self)

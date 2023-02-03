@@ -8,7 +8,7 @@
 import Foundation
 
 class CryptoManager {
-    let CryptoURL = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=eur&order=market_cap_desc&per_page=40&page=1&sparkline=false"
+    let CryptoURL = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=eur&order=market_cap_desc&per_page=10&page=1&sparkline=false"
     
     func fetchCrypto(completion: ((_ cryptoData: [CryptoModel]) -> Void)?){
         let urlString = CryptoURL

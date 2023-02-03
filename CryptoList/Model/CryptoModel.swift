@@ -13,6 +13,7 @@ struct CryptoModel {
     let name: String
     let price: Double
     let image: String
+    let priceChanged: Double
     
     init(cryptoDTO: CryptoDTO) {
         self.id = cryptoDTO.id
@@ -20,5 +21,6 @@ struct CryptoModel {
         self.name = cryptoDTO.name
         self.price = cryptoDTO.current_price
         self.image = cryptoDTO.image
+        self.priceChanged = cryptoDTO.price_changed
     }
 }
