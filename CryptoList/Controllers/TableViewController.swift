@@ -51,8 +51,8 @@ class TableViewController: UITableViewController, UISearchResultsUpdating {
         let cryptoCurrency = filteredCryptoCurrencyList[indexPath.row]
         
         cell.cryptoNameLabel?.text = cryptoCurrency.name
-        let symbolDown = UIImage(systemName: "chevron.down.circle")
-        let symbolUp = UIImage(systemName: "chevron.up.circle")
+        let symbolDown = UIImage(systemName: "chart.line.downtrend.xyaxis")
+        let symbolUp = UIImage(systemName: "chart.line.uptrend.xyaxis")
         
         let priceChanged = cryptoCurrency.priceChanged
         let symbol = priceChanged < 0 ? symbolDown : symbolUp
@@ -60,8 +60,6 @@ class TableViewController: UITableViewController, UISearchResultsUpdating {
         
         cell.cryptoPriceLabel?.text = "\(cryptoCurrency.price) €"
 
-        
-        //cell.cryptoPriceLabel?.text = "\(String(cryptoCurrency.price)) €"
         
         if let imageURL = URL(string: cryptoCurrency.image) {
             DispatchQueue.global().async {
