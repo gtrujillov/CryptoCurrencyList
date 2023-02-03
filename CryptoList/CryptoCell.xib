@@ -54,7 +54,6 @@
                     <constraint firstAttribute="trailing" secondItem="56H-pI-IhD" secondAttribute="trailing" constant="10" id="Fzt-mX-WhT"/>
                     <constraint firstItem="56H-pI-IhD" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="WnC-Gh-3fg"/>
                     <constraint firstItem="uf1-UX-Aix" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="YFg-sa-Ln2"/>
-                    <constraint firstItem="56H-pI-IhD" firstAttribute="leading" secondItem="hmV-Hf-pLP" secondAttribute="trailing" constant="210" id="bpE-S7-eHO"/>
                     <constraint firstItem="hmV-Hf-pLP" firstAttribute="leading" secondItem="ddA-Q5-U6d" secondAttribute="trailing" constant="16" id="fUj-M7-n8Z"/>
                     <constraint firstItem="hmV-Hf-pLP" firstAttribute="centerY" secondItem="ddA-Q5-U6d" secondAttribute="centerY" id="tXi-uE-m2x"/>
                     <constraint firstItem="uf1-UX-Aix" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="w0O-Ke-hyO"/>
@@ -67,7 +66,7 @@
                 <outlet property="cryptoPriceLabel" destination="6pc-fh-fAh" id="Ow3-iC-PWY"/>
                 <outlet property="priceSymbol" destination="hmV-Hf-pLP" id="p1Q-5s-xJQ"/>
             </connections>
-            <point key="canvasLocation" x="121.73913043478262" y="-52.232142857142854"/>
+            <point key="canvasLocation" x="157" y="-65"/>
         </tableViewCell>
     </objects>
 </document>
