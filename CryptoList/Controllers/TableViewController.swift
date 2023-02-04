@@ -88,7 +88,7 @@ class TableViewController: UITableViewController, UISearchResultsUpdating {
             detailVC.lPrice = cryptoCurrencyList[indexPath.row].low24h
             detailVC.hPrice = cryptoCurrencyList[indexPath.row].high24h
             detailVC.volumePrice = cryptoCurrencyList[indexPath.row].totalVolume
-            detailVC.img = UIImage(named: cryptoCurrencyList[indexPath.row].image)!
+            detailVC.img = UIImage(named: cryptoCurrencyList[indexPath.row].image) ?? UIImage()
             
             self.navigationController?.pushViewController(detailVC, animated: true)
         }
