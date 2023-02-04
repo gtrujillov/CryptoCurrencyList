@@ -30,9 +30,9 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         detailCryptoName.text = name
-        hightPrice.text = String(hPrice)
-        lowPrice.text = String(lPrice)
-        volume.text = String(volumePrice)
+        hightPrice.text = "\(String(hPrice)) €"
+        lowPrice.text = "\(String(lPrice)) €"
+        volume.text = "\(String(volumePrice)) €"
         detailImage.image = img
         
     }
