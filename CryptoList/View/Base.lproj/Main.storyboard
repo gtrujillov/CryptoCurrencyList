@@ -72,7 +72,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ujh-Mu-wt5">
-                                <rect key="frame" x="10" y="258.5" width="355" height="70"/>
+                                <rect key="frame" x="10" y="258.5" width="355" height="85"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="Precio más alto en las últimas 24 horas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GF2-L7-1WZ">
                                         <rect key="frame" x="20" y="0.0" width="315.5" height="30"/>
@@ -84,9 +84,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hightPrice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9FK-UA-04k">
-                                        <rect key="frame" x="135" y="40" width="85.5" height="30"/>
+                                        <rect key="frame" x="135" y="40" width="85.5" height="45"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="ifU-yg-pxg"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="ali-6i-gfU"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -96,7 +96,7 @@
                                 <color key="backgroundColor" red="0.9383118748664856" green="0.9377104640007019" blue="0.74672538042068481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wdX-Ly-7Qq">
-                                <rect key="frame" x="10" y="358.5" width="355" height="70"/>
+                                <rect key="frame" x="10" y="373.5" width="355" height="85"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Precio más bajo en las últimas 24 horas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bN-Rq-3kj">
                                         <rect key="frame" x="18" y="0.0" width="319.5" height="30"/>
@@ -108,9 +108,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lowPrice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05V-qP-pWh">
-                                        <rect key="frame" x="142" y="40" width="71.5" height="30"/>
+                                        <rect key="frame" x="142" y="40" width="71.5" height="45"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="yFu-9f-exf"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="t3c-qZ-m2j"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -120,7 +120,7 @@
                                 <color key="backgroundColor" red="0.9383118748664856" green="0.9377104640007019" blue="0.74672538042068481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SBM-k1-OBs">
-                                <rect key="frame" x="10" y="458.5" width="355" height="70"/>
+                                <rect key="frame" x="10" y="488.5" width="355" height="85"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volumen total" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpE-2e-hBQ">
                                         <rect key="frame" x="121" y="0.0" width="113" height="30"/>
@@ -132,9 +132,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="volume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icb-R2-Tkb">
-                                        <rect key="frame" x="146.5" y="40" width="62" height="30"/>
+                                        <rect key="frame" x="146.5" y="40" width="62" height="45"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="eyz-4r-44L"/>
+                                            <constraint firstAttribute="height" constant="45" id="cdN-e0-Ymi"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
