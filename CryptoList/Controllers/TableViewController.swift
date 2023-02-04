@@ -57,7 +57,7 @@ class TableViewController: UITableViewController, UISearchResultsUpdating {
         let priceChanged = cryptoCurrency.priceChanged
         let symbol = priceChanged < 0 ? symbolDown : symbolUp
         
-        cell.priceSymbol?.tintColor = priceChanged < 0 ? .red : .green
+        cell.priceSymbol?.tintColor = priceChanged < 0 ? .red : UIColor(red: 0.3, green: 0.7, blue: 0.3, alpha: 1)
         cell.priceSymbol?.image = symbol
         
         
