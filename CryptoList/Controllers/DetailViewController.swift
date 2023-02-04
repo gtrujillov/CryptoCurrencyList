@@ -34,6 +34,7 @@ class DetailViewController: UIViewController {
         lowPrice.text = String(lPrice)
         volume.text = String(volumePrice)
         detailImage.image = img
+        
     }
     
 

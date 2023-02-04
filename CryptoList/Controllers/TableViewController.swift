@@ -39,7 +39,7 @@ class TableViewController: UITableViewController, UISearchResultsUpdating {
         definesPresentationContext = true
     }
     
-//MARK: - TableView methods
+    //MARK: - TableView methods
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filteredCryptoCurrencyList.count
@@ -62,7 +62,7 @@ class TableViewController: UITableViewController, UISearchResultsUpdating {
         
         
         cell.cryptoPriceLabel?.text = "\(cryptoCurrency.price) €"
-
+        
         
         if let imageURL = URL(string: cryptoCurrency.image) {
             DispatchQueue.global().async {
@@ -88,9 +88,24 @@ class TableViewController: UITableViewController, UISearchResultsUpdating {
             detailVC.lPrice = cryptoCurrencyList[indexPath.row].low24h
             detailVC.hPrice = cryptoCurrencyList[indexPath.row].high24h
             detailVC.volumePrice = cryptoCurrencyList[indexPath.row].totalVolume
-            detailVC.img = UIImage(named: cryptoCurrencyList[indexPath.row].image) ?? UIImage()
             
-            self.navigationController?.pushViewController(detailVC, animated: true)
+            if let imageURL = URL(string: cryptoCurrencyList[indexPath.row].image) {
+                DispatchQueue.global().async {
+                    if let imageData = try? Data(contentsOf: imageURL), let image = UIImage(data: imageData) {
+                        DispatchQueue.main.async {
+                            detailVC.img = image
+                            self.navigationController?.pushViewController(detailVC, animated: true)
+                        }
+                    } else {
+                        detailVC.img = UIImage()
+                        self.navigationController?.pushViewController(detailVC, animated: true)
+                    }
+                }
+            } else {
+                detailVC.img = UIImage()
+                self.navigationController?.pushViewController(detailVC, animated: true)
+            }
+            
         }
     }
     
