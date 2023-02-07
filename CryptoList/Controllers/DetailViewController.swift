@@ -28,7 +28,7 @@ class DetailViewController: UIViewController {
     var img = UIImage()
     
     //Custom color
-    let color = UIColor(red: 0.42, green: 0.36, blue: 0.91, alpha: 1.00).cgColor
+    let color = UIColor(red: 0.88, green: 0.44, blue: 0.33, alpha: 1.00).cgColor
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +47,9 @@ class DetailViewController: UIViewController {
         
         volumeStackView.layer.backgroundColor = color
         volumeStackView.layer.cornerRadius = 15
+        
+        detailImage.layer.cornerRadius = detailImage.frame.size.width / 2
+        detailImage.clipsToBounds = true
         
     }
     
