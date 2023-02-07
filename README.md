@@ -3,3 +3,8 @@
 # CryptoCurrencyList
 
 Cryptocurrency list app with updated prices
+
+#Preview
+
+https://user-images.githubusercontent.com/28809990/217314449-f9a27ee6-ec51-43b6-8f6a-dd3f57854a50.mov
+
