@@ -17,9 +17,13 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var detailImage: UIImageView!
     
     
-    @IBOutlet weak var hightStackView: UIStackView!
-    @IBOutlet weak var lowStackView: UIStackView!
-    @IBOutlet weak var volumeStackView: UIStackView!
+    @IBOutlet weak var stackView: UIStackView!
+    
+    @IBOutlet weak var hightPriceView: UIView!
+    
+    @IBOutlet weak var lowPriceView: UIView!
+    
+    @IBOutlet weak var volumeView: UIView!
     
     var name = ""
     var hPrice = 0.0
@@ -39,14 +43,9 @@ class DetailViewController: UIViewController {
         volume.text = "\(String(volumePrice)) €"
         detailImage.image = img
         
-        hightStackView.layer.backgroundColor = color
-        hightStackView.layer.cornerRadius = 15
-        
-        lowStackView.layer.backgroundColor = color
-        lowStackView.layer.cornerRadius = 15
-        
-        volumeStackView.layer.backgroundColor = color
-        volumeStackView.layer.cornerRadius = 15
+        hightPriceView.layer.cornerRadius = 15
+        lowPriceView.layer.cornerRadius = 15
+        volumeView.layer.cornerRadius = 15
         
         detailImage.layer.cornerRadius = detailImage.frame.size.width / 2
         detailImage.clipsToBounds = true
